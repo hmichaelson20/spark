@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse buttons and events</title>
+	<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<form action="login.php" method="post">
+		<div class="container">
+		    <label for="u"><b>Meeting Code</b></label>
+			<center>
+				<input type="text" placeholder="Enter Meeting Code" name="u" required>
+			</center>
+
+		    <label for="p"><b>Password</b></label>
+		    <center>
+				<input type="password" placeholder="Enter Password" name="p" required>
+			</center>
+
+		    <center>
+				<button type="submit">Login</button>
+			</center>
+		</div>
+	</form>
+	
+	<!-- borrowed code next 8 lines-->
+	<main id="camera">
+	        <!-- Camera sensor -->
+	        <canvas id="camera--sensor"></canvas>
+	        <!-- Camera view -->
+	        <video id="camera--view" autoplay playsinline></video>
+	        <!-- Camera output -->
+	        <img src="//:0" alt="" id="camera--output">
+	</main>
+	
+	<div id="meeting">
+		<script src="scripts/classmeet.js"></script>
+	</div>
+	
+	<div id="tabs"><center>
+		<button class="tablinks" onclick="setAudio()">Mute/Unmute</button>
+		<button class="tablinks">Participants: <a id="numParticipants" href = classmeet.js></a></button>
+		<button class="tablinks">Screen Share</button>
+		<button class="tablinks">File Share</button>
+		<button class="tablinks">Lock meeting</button>
+		<button class="tablinks" onclick="setCamera()">Video On/Off</button>
+		<button class="tablinks">Help</button>
+	</center></div>
+</body>
+</html>
