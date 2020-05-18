@@ -1,0 +1,35 @@
+body{
+	/*background-image: url("washu.png");*/
+	background-color: black;
+    margin: 1;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#meeting{
+	height: 50%;
+	width: 100%;
+}
+
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: green;
+  color: #8B0000;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
